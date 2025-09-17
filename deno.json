@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "strict": true
+  },
+  "tasks": {
+    "bundle-moddable-core": "deno run --log-level debug -A bin/bundle-moddable.ts --entry third_party/nats.js/core/src/mod.ts --out dist/nats-core.moddable.js",
+    "bundle-moddable-internal": "deno run --log-level debug -A bin/bundle-moddable.ts --entry third_party/nats.js/core/src/internal_mod.ts --out dist/nats-core-internal.moddable.js",
+    "bundle-moddable": "deno task bundle-moddable-core && deno task bundle-moddable-internal"
+  },
+  "fmt": {
+    "include": [
+      "bin/",
+      "scripts/",
+      "*.md"
+    ],
+    "exclude": [
+      "dist/",
+      "nats.js/"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "version": "5",
+  "specifiers": {
+    "npm:@esbuild/linux-x64@0.25.5": "0.25.5"
+  },
+  "npm": {
+    "@esbuild/linux-x64@0.25.5": {
+      "integrity": "sha512-uhj8N2obKTE6pSZ+aMUbqq+1nXxNjZIIjCjGLfsWvVpy7gKCOL6rsY1MhRh9zLtUtAI7vpgLMK6DxjO8Qm9lJw==",
+      "os": ["linux"],
+      "cpu": ["x64"]
+    }
+  }
+}

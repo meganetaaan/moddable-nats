@@ -1,0 +1,24 @@
+{
+  "include": [
+    "$(MODDABLE)/modules/io/manifest.json",
+    "$(MODDABLE)/modules/crypt/tls_419.json",
+    "$(MODDABLE)/examples/io/tcp/tlssocket/manifest.json",
+    "$(MODDABLE)/modules/data/url/manifest.json",
+    "$(MODDABLE)/modules/data/text/encoder/manifest.json",
+    "$(MODDABLE)/modules/data/text/decoder/manifest.json"
+  ],
+  "modules": {
+    "transport-moddable-polyfill": "./src/shims/polyfill",
+    "nats-core/internal": "../dist/nats-core-internal.moddable.js",
+    "nats-core": "../dist/nats-core.moddable.js",
+    "transport-moddable-switch-runtime": "./src/shims/switch-runtime.js",
+    "transport-moddable": "./src/index"
+  },
+  "preload": [
+    "transport-moddable-polyfill",
+    "nats-core/internal",
+    "nats-core",
+    "transport-moddable-switch-runtime",
+    "transport-moddable"
+  ]
+}

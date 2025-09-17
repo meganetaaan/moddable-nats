@@ -1,0 +1,9 @@
+{
+  "imports": {
+    "@nats-io/nuid": "../third_party/nuid.js/src/nuid.ts",
+    "@nats-io/nkeys": "../third_party/nkeys.js/src/mod.ts",
+    "tweetnacl": "../vendor/tweetnacl/mod.ts",
+    "crypto": "../vendor/stubs/node-crypto.ts",
+    "node:module": "../vendor/stubs/node-module.ts"
+  }
+}
