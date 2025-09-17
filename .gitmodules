@@ -1,0 +1,12 @@
+[submodule "nats.js"]
+	path = third_party/nats.js
+	url = git@github.com:nats-io/nats.js.git
+[submodule "nuid.js"]
+	path = third_party/nuid.js
+	url = git@github.com:nats-io/nuid.js.git
+[submodule "nkeys.js"]
+	path = third_party/nkeys.js
+	url = git@github.com:nats-io/nkeys.js.git
+[submodule "tweetnacl-js"]
+	path = third_party/tweetnacl-js
+	url = git@github.com:dchest/tweetnacl-js.git
